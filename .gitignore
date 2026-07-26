@@ -1,0 +1,58 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging and build outputs
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# CemCT generated results
+*_cemct_results/
+cemct_results/
+outputs/
+
+# Generated scientific data
+*.tif
+*.tiff
+*.xlsx
+*.xls
+*.npz
+
+# Temporary and log files
+*.tmp
+*.temp
+*.log
+~$*
+
+# Secrets and local configuration
+.env
+.env.*
+
+# Anaconda and Jupyter generated files
+.virtual_documents/
+anaconda_projects/

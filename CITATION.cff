@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: >-
+  If you use CemCT in your research, please cite the software and the
+  associated software publication.
+type: software
+title: >-
+  CemCT: An open-source post-segmentation XRµCT data analysis package for
+  cementitious materials
+abstract: >-
+  CemCT is a Python package for quantitative post-segmentation analysis of
+  binary and integer-labelled three-dimensional X-ray micro-computed
+  tomography datasets of cementitious materials. It provides user-defined
+  phase-fraction analysis, pore connectivity analysis, local-thickness-based
+  pore-size analysis, finite-difference diffusion analysis, random-walk
+  transport analysis, pore-network extraction and intrinsic-permeability
+  estimation.
+authors:
+  - family-names: Su
+    given-names: Zixian
+    email: zixian.su@csu.edu.cn / suzixian076@gmail.com
+    affiliation: >-
+      School of Materials Science and Engineering, Central South University,
+      Changsha, China
+  - family-names: Burnett
+    given-names: Timothy L.
+    affiliation: >-
+      Henry Royce Institute, Department of Materials, The University of
+      Manchester, Manchester, United Kingdom
+  - family-names: Withers
+    given-names: Philip J.
+    email: p.j.withers@manchester.ac.uk
+    affiliation: >-
+      Henry Royce Institute, Department of Materials, The University of
+      Manchester, Manchester, United Kingdom
+version: 1.0.0
+license: BSD-3-Clause
+keywords:
+  - cementitious materials
+  - X-ray micro-computed tomography
+  - XRµCT
+  - three-dimensional image analysis
+  - pore structure
+  - pore connectivity
+  - pore-size distribution
+  - diffusion tortuosity
+  - random walk
+  - pore-network modelling
+  - intrinsic permeability
+repository-code: "TO_BE_ADDED"
+url: "TO_BE_ADDED"

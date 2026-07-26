@@ -1,0 +1,179 @@
+# =============================================================================
+# CemCT project configuration
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# Build system
+# -----------------------------------------------------------------------------
+
+[build-system]
+requires = [
+    "setuptools>=77",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+
+# -----------------------------------------------------------------------------
+# Project metadata
+# -----------------------------------------------------------------------------
+
+[project]
+name = "cemct"
+version = "1.0.0"
+
+description = "An open-source post-segmentation XRmicroCT data analysis package for cementitious materials."
+
+readme = "README.md"
+
+requires-python = ">=3.11,<3.13"
+
+license = "BSD-3-Clause"
+
+authors = [
+    {name = "Zixian Su"},
+]
+
+maintainers = [
+    {name = "Zixian Su"},
+]
+
+keywords = [
+    "cementitious materials",
+    "X-ray computed tomography",
+    "XRmicroCT",
+    "3D image analysis",
+    "labelled images",
+    "phase fraction",
+    "porosity",
+    "pore structure",
+    "pore-size distribution",
+    "pore connectivity",
+    "diffusion tortuosity",
+    "effective diffusivity",
+    "random walk",
+    "pore-network modelling",
+    "intrinsic permeability",
+    "porous media",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+]
+
+
+# -----------------------------------------------------------------------------
+# Core dependencies
+# -----------------------------------------------------------------------------
+
+dependencies = [
+    "numpy>=1.26,<2.3",
+    "scipy>=1.16.2,<2.0",
+    "pandas>=2.2,<3.0",
+    "matplotlib>=3.8,<4.0",
+    "tifffile>=2024.1",
+    "scikit-image>=0.22,<1.0",
+    "openpyxl>=3.1,<4.0",
+]
+
+
+# -----------------------------------------------------------------------------
+# Optional dependencies
+
+# Command-line interface
+[project.scripts]
+cemct = "cemct.cli:main"
+
+# -----------------------------------------------------------------------------
+
+[project.optional-dependencies]
+
+# Local-thickness pore-size analysis and SNOW2 network extraction
+pore = [
+    "porespy>=3.0,<4.0",
+]
+
+# Finite-difference diffusion and pore-network flow simulations
+transport = [
+    "openpnm>=3.6,<4.0",
+    "pyamg>=5.0,<6.0",
+]
+
+# Random-walk transport analysis
+random-walk = [
+    "pytrax>=0.1.2",
+    "pyevtk>=1.6",
+]
+
+# Automated testing and package-building tools
+dev = [
+    "pytest>=8.0,<10.0",
+    "pytest-cov>=5.0,<8.0",
+    "build>=1.2,<2.0",
+]
+
+# Documentation tools
+docs = [
+    "sphinx>=7.0,<10.0",
+    "sphinx-rtd-theme>=2.0,<4.0",
+]
+
+# Install every analysis and development dependency
+all = [
+    "porespy>=3.0,<4.0",
+    "openpnm>=3.6,<4.0",
+    "pyamg>=5.0,<6.0",
+    "pytrax>=0.1.2",
+    "pyevtk>=1.6",
+    "pytest>=8.0,<10.0",
+    "pytest-cov>=5.0,<8.0",
+    "build>=1.2,<2.0",
+]
+
+
+# -----------------------------------------------------------------------------
+# Setuptools configuration for the src/cemct package layout
+# -----------------------------------------------------------------------------
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = [
+    "cemct*",
+]
+
+
+# -----------------------------------------------------------------------------
+# Pytest configuration
+# -----------------------------------------------------------------------------
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+python_files = [
+    "test_*.py",
+]
+
+python_functions = [
+    "test_*",
+]
+
+addopts = [
+    "-ra",
+    "--strict-markers",
+]
