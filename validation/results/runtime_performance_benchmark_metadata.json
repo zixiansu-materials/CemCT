@@ -1,0 +1,39 @@
+{
+  "benchmark_name": "CemCT runtime and performance benchmark",
+  "python_version": "3.11.15 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:12:53) [MSC v.1942 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\zixia\\anaconda3\\envs\\cemct\\python.exe",
+  "operating_system": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 204 Stepping 2, GenuineIntel",
+  "physical_cpu_count": 16,
+  "logical_cpu_count": 16,
+  "total_system_memory_gb": 31.51613998413086,
+  "cemct_version": "1.0.0",
+  "numpy_version": "2.1.3",
+  "scipy_version": "1.17.1",
+  "pandas_version": "2.3.3",
+  "porespy_version": "3.0.4",
+  "openpnm_version": "3.6.2",
+  "pyamg_version": "5.3.0",
+  "pytrax_version": "0.1.2",
+  "psutil_version": "7.0.0",
+  "volume_sizes": [
+    40,
+    60,
+    80
+  ],
+  "number_of_repeats": 3,
+  "voxel_size_um": 0.7,
+  "phase_label": 3,
+  "random_seed": 20260727,
+  "random_walk_steps": 2000,
+  "random_walk_walkers": 1000,
+  "random_walk_stride": 20,
+  "solver_tolerance": 1e-10,
+  "maximum_iterations": 5000,
+  "permeability_boundary_width": 3,
+  "permeability_sigma": 0.4,
+  "permeability_r_max": 4,
+  "transport_directions": [
+    "X"
+  ]
+}
