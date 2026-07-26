@@ -1,0 +1,4 @@
+channel_width_voxels,voxel_size_um,expected_diameter_um,measured_median_diameter_um,measured_mean_diameter_um,absolute_error_um,relative_error_percent,evaluated_voxel_count,acceptance_limit_percent,status
+6,1.0,6.0,6.0,6.0,0.0,0.0,1152,10.0,passed
+10,1.0,10.0,10.0,9.672174453735352,0.0,0.0,3200,10.0,passed
+14,1.0,14.0,13.999999046325684,13.451187133789062,9.5367431640625e-07,6.811959402901785e-06,6272,10.0,passed
