@@ -1,5 +1,7 @@
 # CemCT
 
+[![CemCT automated tests](https://github.com/zixiansu-materials/CemCT/actions/workflows/tests.yml/badge.svg)](https://github.com/zixiansu-materials/CemCT/actions/workflows/tests.yml)
+
 CemCT is a Python package for the post-segmentation analysis of
 three-dimensional X-ray micro-computed tomography (XRµCT) datasets of
 cementitious materials.
