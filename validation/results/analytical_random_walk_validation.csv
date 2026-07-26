@@ -1,0 +1,5 @@
+case,direction,expected_tortuosity,calculated_tortuosity,relative_tortuosity_error,maximum_allowed_relative_error,msd_slope,r_squared,minimum_required_r_squared,tortuosity_passed,linearity_passed,overall_passed,deterministic_repeat_passed,deterministic_maximum_difference
+Fully open domain,X,1.0,0.9761735292404006,0.023826470759599427,0.15,1.0244080279232113,0.9990084692955359,0.97,True,True,True,True,0.0
+Fully open domain,Y,1.0,0.9557022818934778,0.044297718106522166,0.15,1.0463509598603842,0.9952556390039701,0.97,True,True,True,True,0.0
+Fully open domain,Z,1.0,1.0099523489323676,0.009952348932367627,0.15,0.9901457242582897,0.9991724917778809,0.97,True,True,True,True,0.0
+Straight X channel,X,1.0,0.9378039884263532,0.06219601157364685,0.15,1.066320907504363,0.9987068787301601,0.97,True,True,True,True,0.0
