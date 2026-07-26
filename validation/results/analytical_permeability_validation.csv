@@ -1,0 +1,3 @@
+validation_test,expected_permeability_m2,cemct_permeability_m2,absolute_error_m2,relative_error,relative_error_percent,acceptance_tolerance,status
+Darcy-law consistency,1.341980071371518e-12,1.341980071371518e-12,0.0,0.0,0.0,1e-08,PASS
+Hagen-Poiseuille capillary,1.1036511109294656e-12,1.341980071371518e-12,2.3832896044205245e-13,0.21594592537612556,21.594592537612556,0.25,PASS
