@@ -820,10 +820,10 @@ See [RELEASE_METADATA_REVIEW.md](RELEASE_METADATA_REVIEW.md) for outstanding ite
 
 Software authors:
 
-- Zixian Su
-- Timothy L. Burnett
-- Miguel A. G. Aranda
-- Philip J. Withers
+- **Zixian Su** — Henry Royce Institute, Department of Materials, and National X-ray Computed Tomography Facility (NXCT), The University of Manchester, United Kingdom. Now at the School of Materials Science and Engineering, Central South University, China.
+- **Timothy L. Burnett** — Henry Royce Institute, Department of Materials, and National X-ray Computed Tomography Facility (NXCT), The University of Manchester, United Kingdom.
+- **Miguel A. G. Aranda** — Departamento de Química Inorgánica, Cristalografía y Mineralogía, and Instituto Universitario de Materiales y Nanotecnología (IMANA), University of Malaga, Spain.
+- **Philip J. Withers** — Henry Royce Institute, Department of Materials, and National X-ray Computed Tomography Facility (NXCT), The University of Manchester, United Kingdom; Department of Materials Science and Engineering, Monash University, Australia.
 
 ### Contact
 
