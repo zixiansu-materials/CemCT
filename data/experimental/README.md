@@ -17,6 +17,6 @@ Run examples/reproduce_manuscript.ipynb using examples/manuscript_parameters.jso
 
 ## Data ownership and licensing
 
-The experimental data belong to the research team. The data owner reports no additional collaborator requirements. A specific open-data license has not yet been selected. This update makes no new grant of data permissions and does not label the TIFFs or derived experimental results as CC BY or another open-data license.
+The two experimental TIFF volumes in data/experimental/ and the team-generated accompanying results in results/manuscript/ are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/. Software remains licensed under BSD-3-Clause.
 
-The software retains its separate BSD-3-Clause license. No dataset DOI has been supplied. Record the selected data license and actual archive identifier when available.
+The software retains its separate BSD-3-Clause license. No dataset DOI has been supplied. The data license is CC BY 4.0; record the actual archive identifier when available.

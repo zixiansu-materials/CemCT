@@ -17,5 +17,7 @@
   "sha256": {
     "NasSO4_slag_raw_BC_Seg.tif": "82f6be5dc593fa0476784d327d7f2f63fc65bac639f0f157b129cd5a18ad2358",
     "raw_CT.tif": "c33b2866d4b36f4d475a688648112fe3f722889de17af235ace6c8707d8f8e64"
-  }
+  },
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/"
 }

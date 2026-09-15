@@ -34,7 +34,7 @@ Manuscript V3.6 is a separate document revision.
 
 ### Remaining release work
 
-- Select and record the open-data license for TIFFs and derived experimental results.
+- Data license confirmed as CC BY 4.0; see DATA_LICENSE.md.
 - Verify repository visibility and the intended public release tag.
 - Create a versioned archive and record the real DOI and release date.
 - Add a published article citation when available.

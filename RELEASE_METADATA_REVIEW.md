@@ -6,12 +6,12 @@
 - Software version remains 1.0.0. Manuscript V3.6 is a document revision only. Public tag and DOI status are not asserted.
 - Software license identifier remains BSD-3-Clause, with LICENSE unchanged.
 - Citation URL placeholders are replaced by the repository address supplied with the manuscript. The CFF email is a single address matching the manuscript support email.
-- Experimental data are team-owned, with no additional collaborator requirements reported by the owner. A specific open-data license is not selected. Earlier draft wording about an existing agreement was removed.
+- The two experimental TIFF volumes in data/experimental/ and the team-generated accompanying results in results/manuscript/ are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/. Software remains licensed under BSD-3-Clause.
 - README and CHANGELOG reflect completed experimental reproduction. No source algorithms, TIFFs, configuration, notebook or verified numerical outputs were modified.
 
 ## Remaining publication metadata
 
-Select a specific data license; verify repository visibility and release tag; add real software/data archive DOI values and article citation when available. No public release or deposit was performed in this review.
+Verify repository visibility and release tag; add real software/data archive DOI values and article citation when available. No public release or deposit was performed in this review.
 
 ## Checks
 

@@ -15,7 +15,7 @@ transport-property analysis.
 **Manuscript revision:** V3.6 is a document revision, not a software version.
 
 The source archive contains a BSD-3-Clause software license in [LICENSE](LICENSE).
-The experimental data belong to the research team, with no additional collaborator requirements reported by the data owner. A specific open-data license has not been selected; see [data/experimental/README.md](data/experimental/README.md).
+The two experimental TIFF volumes in data/experimental/ and the team-generated accompanying results in results/manuscript/ are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/. Software remains licensed under BSD-3-Clause.
 
 ---
 
@@ -844,7 +844,7 @@ The included [LICENSE](LICENSE) declares BSD-3-Clause for the software;
 `pyproject.toml` and `CITATION.cff` use the same identifier. The license text and
 copyright notice are unchanged by this review.
 
-The experimental data belong to the research team. The data owner reports no additional collaborator requirements. A specific open-data license has not yet been selected. This metadata update does not grant new permissions for the TIFFs or their derived experimental results. See [data/experimental/README.md](data/experimental/README.md).
+The two experimental TIFF volumes in data/experimental/ and the team-generated accompanying results in results/manuscript/ are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/. Software remains licensed under BSD-3-Clause.
 
 Release preparation and data-clearance status are separate from the software
 license declaration. The repository and DOI should only be described as publicly
@@ -852,4 +852,4 @@ released after that has actually been verified.
 
 ## Experimental manuscript reproduction
 
-The experimental grayscale and segmented 200³ TIFF volumes are in [data/experimental](data/experimental/README.md), calibrated to 0.7 um per voxel. Run [examples/reproduce_manuscript.ipynb](examples/reproduce_manuscript.ipynb) with [manuscript_parameters.json](examples/manuscript_parameters.json). The notebook invokes all six package modules and exports a comparison against rounded manuscript values. The final configuration uses a full-interval (0.0–1.0) through-origin random-walk fit. Read the parameter provenance and numerical comparison rather than assuming bitwise agreement with historical runs. A specific open-data license and permanent archival details remain pending.
+The experimental grayscale and segmented 200³ TIFF volumes are in [data/experimental](data/experimental/README.md), calibrated to 0.7 um per voxel. Run [examples/reproduce_manuscript.ipynb](examples/reproduce_manuscript.ipynb) with [manuscript_parameters.json](examples/manuscript_parameters.json). The notebook invokes all six package modules and exports a comparison against rounded manuscript values. The final configuration uses a full-interval (0.0–1.0) through-origin random-walk fit. Read the parameter provenance and numerical comparison rather than assuming bitwise agreement with historical runs. The experimental data and accompanying results are licensed under CC BY 4.0; permanent archival details remain pending.
