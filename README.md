@@ -830,13 +830,11 @@ Software authors:
 Zixian Su, School of Materials Science and Engineering, Central South University,
 Changsha, China. Support: suzixian076@gmail.com (the manuscript support address).
 
-## Project acknowledgement
+## Funding and acknowledgements
 
-CemCT was developed through work associated with X-SeeO2 Task 8.1 and the
-National X-ray Computed Tomography Facility at The University of Manchester.
+This work has received funding from the European Union's Horizon Europe research and innovation programme [EIC-Pathfinder Challenges] under grant agreement No 101220926, project acronym 'X-SeeO2'. Zixian Su also acknowledges institutional start-up funding from Central South University.
 
-The formal funding statement, project grant information and institutional
-acknowledgements will be added before public release.
+Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or EIC/European Innovation Council and SMEs Executive Agency (EISMEA). Neither the European Union nor the granting authority can be held responsible for them.
 
 ---
 
