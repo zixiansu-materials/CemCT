@@ -1,0 +1,57 @@
+{
+  "voxel_size_um": 0.7,
+  "phase_label": 2,
+  "phases": {
+    "0": "Unreacted slag",
+    "1": "Reaction products",
+    "2": "Resolved capillary pores"
+  },
+  "pore_size": {
+    "number_of_bins": 30,
+    "method": "dt",
+    "sizes": 25
+  },
+  "diffusion": {
+    "directions": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "solver_tolerance": 1e-10,
+    "maximum_iterations": 5000
+  },
+  "random_walk": {
+    "connectivity_mode": "any",
+    "number_of_steps": 5000,
+    "number_of_walkers": 3000,
+    "stride": 10,
+    "same_start": false,
+    "number_of_processes": 1,
+    "deterministic_seed": true,
+    "fit_start_fraction": 0.0,
+    "fit_end_fraction": 1.0,
+    "return_coordinates": false
+  },
+  "permeability": {
+    "directions": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "boundary_width": 3,
+    "dynamic_viscosity_pa_s": 1.0,
+    "inlet_pressure_pa": 1.0,
+    "outlet_pressure_pa": 0.0,
+    "accuracy": "standard",
+    "sigma": 0.4,
+    "r_max": 4,
+    "solver_tolerance": 1e-10,
+    "maximum_iterations": 5000
+  },
+  "parameter_provenance": {
+    "manuscript_and_author": "200^3, labels 0/1/2, voxel size 0.7 um, random walk 3000 walkers / 5000 steps / stride 10 / union mask",
+    "existing_demo_and_api_defaults": "Other numerical settings are carried over from CemCT_Demonstration.ipynb or package defaults. The final reproduction configuration has been explicitly fixed and run on the supplied experimental data; historical settings are not inferred solely from matching rounded values.",
+    "seed": "deterministic_seed is the PyTrax Boolean debugging-seed option, not a user-selected integer seed.",
+    "full_interval_fit": "All 500 saved time points (steps 0 to 4990 inclusive, stride 10) are used in a through-origin fit. This is the full-interval convention also used by the older notebook through PyTrax plot_msd. On the supplied experimental data, the resulting directional tortuosities round to 5.0, 5.7 and 4.6. The author approved this setting for the updated reproduction package and manuscript."
+  }
+}

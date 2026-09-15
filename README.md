@@ -10,12 +10,12 @@ The package supports binary and integer-labelled 3D TIFF volumes and provides
 a reproducible workflow for quantitative phase, pore-structure and
 transport-property analysis.
 
-> **Development status:** Release Candidate  
-> **Current version:** 1.0.0  
-> **Release status:** Unreleased working version  
->
-> The present version is being prepared for open-source release. It should not
-> be redistributed without permission from the development team.
+**Software version:** 1.0.0 (working snapshot for the planned v1.0.0 release).
+**Public release status:** A published tag and permanent archive have not been verified in this review.
+**Manuscript revision:** V3.6 is a document revision, not a software version.
+
+The source archive contains a BSD-3-Clause software license in [LICENSE](LICENSE).
+The experimental data belong to the research team, with no additional collaborator requirements reported by the data owner. A specific open-data license has not been selected; see [data/experimental/README.md](data/experimental/README.md).
 
 ---
 
@@ -199,7 +199,7 @@ The phase-fraction module reports:
 - Volume fraction percentage
 - Physical volume in µm³
 - Physical volume in mm³
-- Directional phase-fraction profiles along X, Y and Z
+- Phase totals and fractions for user-selected labels
 
 Only labels explicitly selected by the user are included in the analysed
 specimen volume.
@@ -335,7 +335,7 @@ For each direction, the module can report:
 - Intrinsic permeability in m²
 - Intrinsic permeability in Darcy
 - Intrinsic permeability in mD
-- Three-dimensional pressure field
+- Network-node pressure arrays with pore coordinates (NPZ)
 
 Permeability results depend on segmentation quality, spatial resolution,
 network-extraction parameters and the assumptions used in the pore-network
@@ -365,8 +365,7 @@ Optional scientific dependencies include:
 - PyTrax
 - pyevtk
 
-The package has primarily been developed and tested on Windows. Additional
-cross-platform testing will be performed before formal release.
+The latest local verification used Windows and Python 3.11: 40 automated tests passed and all six modules completed on the experimental dataset. The archive includes an Ubuntu/Python 3.11 GitHub Actions workflow; the presence of this file is not proof of a successful remote run. macOS and Python 3.12 support are declared targets, not newly verified platforms in this review.
 
 ---
 
@@ -390,11 +389,10 @@ dependency groups:
 python -m pip install -e ".[all,dev]"
 ```
 
-If the `dev` optional dependency group is not defined in `pyproject.toml`,
-install the development tools separately:
+The `dev` group is defined. For distribution metadata checks, install Twine separately:
 
 ```bat
-python -m pip install pytest build twine
+python -m pip install twine
 ```
 
 ---
@@ -733,9 +731,7 @@ The current release candidate has been tested using:
 - Clean execution of the six scientific analysis modules
 - Automated verification of exported files
 
-Additional validation using experimental cementitious-material datasets,
-resolution-sensitivity analysis, parameter-sensitivity analysis and
-cross-software comparison is in progress.
+The supplied 200³ experimental example has completed all six modules with the final configuration. Numerical parameter-sensitivity scripts and their saved results are included under validation/. This does not establish segmentation uncertainty, representative-volume convergence or independent cross-software agreement.
 
 ---
 
@@ -809,41 +805,30 @@ CemCT/
 
 ## Citation
 
-Citation metadata will be supplied through:
+Software citation metadata is provided in [CITATION.cff](CITATION.cff).
+The repository address recorded in the manuscript and existing README is
+https://github.com/zixiansu-materials/CemCT. Public accessibility and a release tag
+have not been verified here; this URL is not a permanent archive DOI.
 
-```text
-CITATION.cff
-```
+The software citation and package metadata list Zixian Su, Timothy L. Burnett, Miguel A. G. Aranda and Philip J. Withers, version 1.0.0. Zixian Su remains the package maintainer.
 
-following confirmation of the final software name, version, authorship,
-repository URL and DOI.
-
-Until the first formal release, please cite the associated X-SeeO2 Task 8.1
-documentation where appropriate.
-
----
+No software DOI, publication DOI or release date is invented. Add the archived
+version DOI after deposit, and add the published article citation when available.
+See [RELEASE_METADATA_REVIEW.md](RELEASE_METADATA_REVIEW.md) for outstanding items.
 
 ## Development team
 
+Software authors:
+
 - Zixian Su
 - Timothy L. Burnett
+- Miguel A. G. Aranda
 - Philip J. Withers
 
 ### Contact
 
-For development enquiries, contact:
-
-```text
-Zixian Su
-School of Materials Science and Engineering
-Central South University
-Changsha, China
-```
-
-Formal contact details and corresponding-author information will be added
-following confirmation by the development team.
-
----
+Zixian Su, School of Materials Science and Engineering, Central South University,
+Changsha, China. Support: suzixian076@gmail.com (the manuscript support address).
 
 ## Project acknowledgement
 
@@ -857,10 +842,16 @@ acknowledgements will be added before public release.
 
 ## License
 
-The intended open-source license is the BSD 3-Clause License.
+The included [LICENSE](LICENSE) declares BSD-3-Clause for the software;
+`pyproject.toml` and `CITATION.cff` use the same identifier. The license text and
+copyright notice are unchanged by this review.
 
-The final software ownership, copyright statement, licensing terms and
-public-release conditions must be confirmed before formal distribution.
+The experimental data belong to the research team. The data owner reports no additional collaborator requirements. A specific open-data license has not yet been selected. This metadata update does not grant new permissions for the TIFFs or their derived experimental results. See [data/experimental/README.md](data/experimental/README.md).
 
-Until these matters are confirmed, this release candidate should be treated as
-an unreleased working version and should not be redistributed.
+Release preparation and data-clearance status are separate from the software
+license declaration. The repository and DOI should only be described as publicly
+released after that has actually been verified.
+
+## Experimental manuscript reproduction
+
+The experimental grayscale and segmented 200³ TIFF volumes are in [data/experimental](data/experimental/README.md), calibrated to 0.7 um per voxel. Run [examples/reproduce_manuscript.ipynb](examples/reproduce_manuscript.ipynb) with [manuscript_parameters.json](examples/manuscript_parameters.json). The notebook invokes all six package modules and exports a comparison against rounded manuscript values. The final configuration uses a full-interval (0.0–1.0) through-origin random-walk fit. Read the parameter provenance and numerical comparison rather than assuming bitwise agreement with historical runs. A specific open-data license and permanent archival details remain pending.

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: >-
   If you use CemCT in your research, please cite the software and the
-  associated software publication.
+  associated software publication when it is available.
 type: software
 title: >-
   CemCT: An open-source post-segmentation XRµCT data analysis package for
@@ -17,7 +17,7 @@ abstract: >-
 authors:
   - family-names: Su
     given-names: Zixian
-    email: zixian.su@csu.edu.cn / suzixian076@gmail.com
+    email: suzixian076@gmail.com
     affiliation: >-
       School of Materials Science and Engineering, Central South University,
       Changsha, China
@@ -26,6 +26,9 @@ authors:
     affiliation: >-
       Henry Royce Institute, Department of Materials, The University of
       Manchester, Manchester, United Kingdom
+  - family-names: Aranda
+    given-names: Miguel A. G.
+    affiliation: University of Malaga, Malaga, Spain
   - family-names: Withers
     given-names: Philip J.
     email: p.j.withers@manchester.ac.uk
@@ -46,5 +49,5 @@ keywords:
   - random walk
   - pore-network modelling
   - intrinsic permeability
-repository-code: "TO_BE_ADDED"
-url: "TO_BE_ADDED"
+repository-code: "https://github.com/zixiansu-materials/CemCT"
+url: "https://github.com/zixiansu-materials/CemCT"

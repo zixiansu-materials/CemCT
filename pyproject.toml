@@ -33,6 +33,9 @@ license = "BSD-3-Clause"
 
 authors = [
     {name = "Zixian Su"},
+    {name = "Timothy L. Burnett"},
+    {name = "Miguel A. G. Aranda"},
+    {name = "Philip J. Withers"},
 ]
 
 maintainers = [
@@ -71,6 +74,10 @@ classifiers = [
     "Operating System :: POSIX :: Linux",
     "Operating System :: MacOS",
 ]
+
+
+[project.urls]
+Repository = "https://github.com/zixiansu-materials/CemCT"
 
 
 # -----------------------------------------------------------------------------
