@@ -76,8 +76,6 @@ classifiers = [
 ]
 
 
-[project.urls]
-Repository = "https://github.com/zixiansu-materials/CemCT"
 
 
 # -----------------------------------------------------------------------------
@@ -99,6 +97,9 @@ dependencies = [
 # Optional dependencies
 
 # Command-line interface
+[project.urls]
+Repository = "https://github.com/zixiansu-materials/CemCT"
+
 [project.scripts]
 cemct = "cemct.cli:main"
 
