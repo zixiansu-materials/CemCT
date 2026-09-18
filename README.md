@@ -810,7 +810,7 @@ The repository address recorded in the manuscript and existing README is
 https://github.com/zixiansu-materials/CemCT. Public accessibility and a release tag
 have not been verified here; this URL is not a permanent archive DOI.
 
-The software citation and package metadata list Zixian Su, Timothy L. Burnett, Miguel A. G. Aranda and Philip J. Withers, version 1.0.0. Zixian Su remains the package maintainer.
+The software citation and package metadata list Zixian Su, Timothy L. Burnett, Susan A. Bernal, Miguel A. G. Aranda and Philip J. Withers, version 1.0.0. Zixian Su remains the package maintainer.
 
 No software DOI, publication DOI or release date is invented. Add the archived
 version DOI after deposit, and add the published article citation when available.
@@ -822,6 +822,7 @@ Software authors:
 
 - **Zixian Su** — Henry Royce Institute, Department of Materials, and National X-ray Computed Tomography Facility (NXCT), The University of Manchester, United Kingdom. Now at the School of Materials Science and Engineering, Central South University, China.
 - **Timothy L. Burnett** — Henry Royce Institute, Department of Materials, and National X-ray Computed Tomography Facility (NXCT), The University of Manchester, United Kingdom.
+- **Susan A. Bernal** – Department of Architecture and Civil Engineering, University of Bath, Claverton Down, Bath BA2 7AY, United Kingdom; Institute for Building Materials (IfB), ETH Zürich, CH-8093 Zürich, Switzerland.
 - **Miguel A. G. Aranda** — Departamento de Química Inorgánica, Cristalografía y Mineralogía, and Instituto Universitario de Materiales y Nanotecnología (IMANA), University of Malaga, Spain.
 - **Philip J. Withers** — Henry Royce Institute, Department of Materials, and National X-ray Computed Tomography Facility (NXCT), The University of Manchester, United Kingdom; Department of Materials Science and Engineering, Monash University, Australia.
 
